@@ -39,5 +39,17 @@
       "objective_value": 4090.1905078321274
     }
   },
-  "checkpoint_sha256": "061e52933f5e16be29e097c8a114449e996dbf0fcdf64be2c73de583a1740223"
+  "checkpoint_sha256": "061e52933f5e16be29e097c8a114449e996dbf0fcdf64be2c73de583a1740223",
+  "randomness": "none: three deterministic ridge solves (normal equations), no sampling or random initialisation",
+  "seed": null,
+  "dependencies": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "torch": "not used at inference or fitting"
+  },
+  "fit_seconds": 6.0,
+  "threads": "OMP/OPENBLAS/MKL_NUM_THREADS=4, set by the trainer and documented in REPRODUCE.md",
+  "refit_reproduces_checkpoint": "yes: refitting from train+validation regenerates model.npz byte-for-byte (same sha256)",
+  "code_commit": "31057131f445112cb3937b2b0fa2ffd1ee3e21b1",
+  "inference_assets": "model.npz 25423 B + metadata.json; no embedded arrays, no indexes"
 }

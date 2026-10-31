@@ -17,5 +17,19 @@
  "pdf": "output/pdf/MP2_Report.pdf",
  "experiment_record": "report/EXPERIMENTS.md",
  "aggregate_evidence": "report/RESULTS.json",
- "selection_disclosure": "best of several reads of the public test bank; not a fresh blind estimate"
+ "selection_disclosure": "best of several reads of the public test bank; not a fresh blind estimate",
+ "code_commit": "31057131f445112cb3937b2b0fa2ffd1ee3e21b1",
+ "repository": "https://github.com/abccase/DASE7506_MP2",
+ "report_pages": 5,
+ "randomness": "none (deterministic linear solves); no seed required",
+ "dependencies": {
+  "python": "3.12.14",
+  "numpy": "2.5.3"
+ },
+ "fit_seconds": 6.0,
+ "refit_reproducible": "refitting from train+validation regenerates model.npz byte-for-byte",
+ "inference_assets_bytes": 26740,
+ "evaluation": "inference 0.35 s + scoring 0.04 s on Ryzen 9 6900HX, four threads (limits: 30 s, 16 MiB)",
+ "data_use": "coefficients fitted on training and validation references; test references never used for fitting, tuning or selection",
+ "data_not_tracked": "code/data/ is excluded from the repository; obtain it from the course repository"
 }
