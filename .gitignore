@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+runs/
+.DS_Store
+Thumbs.db
+
+# supplied course data, obtain from the course repository
+code/data/

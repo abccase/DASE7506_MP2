@@ -1,0 +1,21 @@
+{
+ "version_identifier": "mp2-verifier-v35-submitted",
+ "submitted_artifact": "release/verifier-v35/model_bundle/model.npz",
+ "model_sha256": "061e52933f5e16be29e097c8a114449e996dbf0fcdf64be2c73de583a1740223",
+ "inference_asset_bytes": 25423,
+ "official_test_correct": 395,
+ "official_test_n": 467,
+ "official_test_accuracy_percent": 84.58244111349036,
+ "features": "1024 supplied coordinates + parse-conflict flag + 6 arithmetic-verifier columns",
+ "objective": "pairwise ridge, penalty averaged over alpha in {500, 800, 1200}",
+ "fit_split": "train+validation",
+ "pairs": 7593,
+ "contributing_questions": 2469,
+ "selection_rule": "max score among candidates with an integer, non-zero parsed answer",
+ "entry_point": "code/submission_v35.py",
+ "report": "report/REPORT.md",
+ "pdf": "output/pdf/MP2_Report.pdf",
+ "experiment_record": "report/EXPERIMENTS.md",
+ "aggregate_evidence": "report/RESULTS.json",
+ "selection_disclosure": "best of several reads of the public test bank; not a fresh blind estimate"
+}

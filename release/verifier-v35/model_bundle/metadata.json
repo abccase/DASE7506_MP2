@@ -1,0 +1,43 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "feature_schema": "embedding-plus-parse-conflict-plus-arithmetic-verifier-v31",
+  "base_schema": "embedding-plus-parse-conflict-v1",
+  "verifier_columns": [
+    "n_eq",
+    "n_false",
+    "false_rate",
+    "any_false",
+    "in_rhs",
+    "n_symbolic"
+  ],
+  "objective": "pairwise",
+  "alphas": [
+    500.0,
+    800.0,
+    1200.0
+  ],
+  "fusion": "equal-weight mean of question-wise z-scores",
+  "fit_split": "train+validation",
+  "note": "validation contributed no independent evidence for this artifact; it was used as a check three times before being folded into the fit",
+  "fit_diagnostics": {
+    "500": {
+      "pairs": 7593,
+      "contributing_questions": 2469,
+      "normal_equation_relative_residual": 6.023135831997781e-16,
+      "objective_value": 3781.804213397864
+    },
+    "800": {
+      "pairs": 7593,
+      "contributing_questions": 2469,
+      "normal_equation_relative_residual": 5.020450054002381e-16,
+      "objective_value": 3944.1767069114494
+    },
+    "1200": {
+      "pairs": 7593,
+      "contributing_questions": 2469,
+      "normal_equation_relative_residual": 4.250806679560854e-16,
+      "objective_value": 4090.1905078321274
+    }
+  },
+  "checkpoint_sha256": "061e52933f5e16be29e097c8a114449e996dbf0fcdf64be2c73de583a1740223"
+}
